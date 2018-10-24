@@ -3,10 +3,15 @@
 body {
   border: 1px solid #aaa;
 }
+
 h1 {
   background: #a0a;
 }
 
 .supp {
   background: #55f;
+}
+
+.border-line {
+  border: 2px solid #555;
 }
