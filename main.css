@@ -1,3 +1,8 @@
+@charset "utf-8";
+
+body {
+  border: 1px solid #aaa;
+}
 h1 {
   background: #a0a;
 }
