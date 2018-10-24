@@ -8,6 +8,13 @@ h1 {
   background: #a0a;
 }
 
+h3 {
+  color: #364e96;
+  padding: 0.5em 0;
+  border-top: solid 3px #364e96;
+  border-bottom: solid 3px #364e96;
+  }
+
 .supp {
   background: #55f;
 }
