@@ -9,9 +9,28 @@ footer{
   background: #aaa;
 }
 
-h1 {
-  background: #a0a;
-}
+.title {
+  text-align: center;
+  width: 180px;
+  margin-bottom: 2em;
+  color: #fff;
+  background: #aaa;
+  position: relative;
+  padding: 0.25em 1em;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  }
+  .title:before, .title:after{
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 2px;
+    height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color: black;
+  }
+  .title:before {left: 7px;}
+  .title:after {right: 7px;}
 
 h3 {
   max-width:350px;
