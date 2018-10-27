@@ -65,6 +65,19 @@ h3 {
   background: #55f;
 }
 
+/* 2.色変化アニメ */
+.a02-collar:hover {
+  background-color: #2196f3;
+}
+.a02-collar {
+  height: 200px;
+  width: 200px;
+  background-color: #f44336;
+  transition: 1s;
+}
+
+
+
 
 /* 1.回転アニメ */
 .a01-box {
