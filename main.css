@@ -66,14 +66,16 @@ h3 {
 }
 
 /* 2.色変化アニメ */
-.a02-collar:hover {
-  background-color: #2196f3;
-}
 .a02-collar {
-  height: 200px;
-  width: 200px;
+  height: 50px;
+  width: 50px;
   background-color: #f44336;
-  transition: 1s;
+  position: relative;
+  animation: anime 2s infinite alternate;
+}
+@keyframes anime {
+  0% {background-color: #f00;}
+  100% {background-color: #2196f3;}
 }
 
 
@@ -85,7 +87,7 @@ h3 {
   height: 50px;
   background: #1a0;
 
-  -webkit-animation: spin 1.5s linear infinite;
+  /* -webkit-animation: spin 1.5s linear infinite; */
   animation: spin 1.5s linear infinite;
 }
 @keyframes spin {
