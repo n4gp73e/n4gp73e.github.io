@@ -11,6 +11,7 @@ footer{
   text-align: center;
 }
 
+
 .title {
   text-align: center;
   width: 180px;
@@ -33,6 +34,8 @@ footer{
   }
   .title:before {left: 7px;}
   .title:after {right: 7px;}
+
+
 
 h3 {
   max-width:350px;
@@ -64,6 +67,9 @@ h3 {
 
 
 .supp {
+  margin: 1em;
+  font-size: 14px;
+  color: #fff;
   background: #55f;
 }
 
