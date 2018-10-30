@@ -90,8 +90,8 @@ h4 {
   animation: squash ease 1s infinite alternate;
 }
 @keyframes squash {
-  0%,100% {transform: translateY(0)scale(1.2,0.8) ;}
-  50%  {transform: translateY(50px)scale(0.8,1.2);}
+  0%,100% {transform: translateY(0)scale(0.8,1.2) ;}
+  50%  {transform: translateY(50px)scale(1.2,0.8);}
 }
 
 
