@@ -84,7 +84,10 @@ h4 {
 }
 
 .a03-squash {
-
+  height: 50px;
+  width: 50px;
+  background: #f00;
+  animation: anime
 }
 
 
@@ -94,9 +97,9 @@ h4 {
   width: 50px;
   background-color: #000;
   position: relative;
-  animation: anime 1s infinite alternate;
+  animation: cchange 1s infinite alternate;
 }
-@keyframes anime {
+@keyframes cchange {
   0%   {background-color: #f00;}
   50%  {background-color: #f55;}
   100% {background-color: #ffe;}
