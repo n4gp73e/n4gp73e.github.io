@@ -90,7 +90,7 @@ h4 {
   animation: squash 1s infinite alternate;
 }
 @keyframes squash {
-  0%   {;}
+  0%,100% {;}
   50%  {;}
 }
 
