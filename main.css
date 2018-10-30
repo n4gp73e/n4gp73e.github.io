@@ -13,9 +13,11 @@ footer{
 
 
 .title {
+  font-size: 24px;
   text-align: center;
-  width: 180px;
-  margin-bottom: 2em;
+  width: 250px;
+  padding: 0;
+  margin: 0;
   color: #fff;
   background: #aaa;
   position: relative;
@@ -47,10 +49,20 @@ h3 {
   }
 
 h4 {
-  background-color: #fcc;
+  font-size: 16px;
+  width: 256px;
+  /* background-color: #fcc; */
   color: #333;
-  padding: 1px 10px 0px 5px;
+  padding: 0px 5px;
+  margin-bottom: 0;
   border-left: solid 5px #f00;
+}
+
+.supp {
+  margin:5px 0px;
+  padding: em;
+  font-size: 14px;
+  color: #333;
 }
 
 /* 改行空白 */
@@ -62,22 +74,14 @@ h4 {
 }
 
 
-
 /* 空白線 */
 .line {
-  border-top: 4px double #8c8b8b;
+  border-top: 5px double #8c8b8b;
   text-align: center;
   margin: 2em 0;
 }
 
 
-
-.supp {
-  margin: 1em;
-  font-size: 14px;
-  color: #fff;
-  background: #55f;
-}
 
 /* 2.色変化 */
 .a02-collar {
@@ -85,11 +89,12 @@ h4 {
   width: 50px;
   background-color: #f44336;
   position: relative;
-  animation: anime 2s infinite alternate;
+  animation: anime 1s infinite alternate;
 }
 @keyframes anime {
   0% {background-color: #f00;}
-  100% {background-color: #2196f3;}
+  50% {background-color: #0f0;}
+  100% {background-color: #00f;}
 }
 
 
@@ -99,12 +104,13 @@ h4 {
 .a01-box {
   width: 50px;
   height: 50px;
-  background: #1a0;
+  background: #0f0;
 
   /* -webkit-animation: spin 1.5s linear infinite; */
-  animation: spin 1.5s linear infinite;
+  animation: spin 2s linear infinite;
 }
 @keyframes spin {
   0% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
+  50% {transform: rotate(360deg);}
+  100% {transform: rotate(1080deg);}
 }
