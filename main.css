@@ -95,8 +95,8 @@ h4 {
 }
 @keyframes anime {
   0% {background-color: #f00;}
-  50% {background-color: #0f0;}
-  100% {background-color: #00f;}
+  60% {background-color: #f55;}
+  100% {background-color: #ffe;}
 }
 
 
