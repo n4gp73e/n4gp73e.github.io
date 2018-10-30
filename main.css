@@ -87,8 +87,8 @@ h4 {
   height: 50px;
   width: 50px;
   background: #f00;
-  animation:  squash 900ms infinite;
-  animation:  squash-move 900ms infinite;
+  animation: squash 900ms infinite,
+             squash-move 900ms infinite;
 }
 @keyframes squash {
   0%,100% {transform: scale(0.8,1.2) ;}
