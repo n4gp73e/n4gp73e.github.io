@@ -83,21 +83,33 @@ h4 {
   margin: 2em 0;
 }
 
+
+
+
+
+
+/* ------ css animations ------ */
+
+
+
 .a03-squash {
   height: 50px;
   width: 50px;
   background: #f00;
-  animation: squash 900ms infinite,
-             squash-move 900ms infinite;
+  animation:
+    squash-1 900ms infinite,
+    squash-2 900ms infinite;
 }
-@keyframes squash {
-  0%,100% {transform: scale(0.8,1.2) ;}
-  50% {transform: scale(1.1,0.9);}
+@keyframes squash-1 {
+  0%,100% {transform: scale(0.8,1.2),
+    translateY(0);}
+  50% {transform: scale(1.1,0.9)
+    translateY(50px);}
 }
-@keyframes squash-move {
+/* @keyframes squash-2 {
   0%,100% {transform: translateY(0);}
   50% {transform: translateY(50px);}
-}
+} */
 
 
 /* 2.色変化 */
@@ -106,12 +118,12 @@ h4 {
   width: 50px;
   background-color: #000;
   position: relative;
-  animation: cchange 1s infinite alternate;
+  animation: cchange 0.7s infinite alternate;
 }
 @keyframes cchange {
   0%   {background-color: #f00;}
-  50%  {background-color: #f55;}
-  100% {background-color: #ffe;}
+  50%  {background-color: #f50;}
+  100% {background-color: #fc0;}
 }
 
 
@@ -119,6 +131,7 @@ h4 {
 
 /* 1.回転 */
 .a01-box {
+  margin: 10px 10px;
   width: 50px;
   height: 50px;
   background: #0f0;
