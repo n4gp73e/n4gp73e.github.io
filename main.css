@@ -87,11 +87,16 @@ h4 {
   height: 50px;
   width: 50px;
   background: #f00;
-  animation: squash ease 1s infinite alternate;
+  animation:  squash 900ms infinite;
+  animation:  ymove 900ms infinite;
 }
 @keyframes squash {
-  0%,100% {transform: translateY(0)scale(0.8,1.2) ;}
-  50%  {transform: translateY(50px)scale(1.2,0.8);}
+  0%,100% {transform: scale(0.8,1.2) ;}
+  50% {transform: scale(1.1,0.9);}
+}
+@keyframes ymove {
+  0%,100% {transform: translateY(0);}
+  50% {transform: translateY(50px);}
 }
 
 
