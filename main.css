@@ -89,7 +89,7 @@ h4 {
 .a02-collar {
   height: 50px;
   width: 50px;
-  background-color: #f44336;
+  background-color: #000;
   position: relative;
   animation: anime 1s infinite alternate;
 }
