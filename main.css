@@ -47,14 +47,15 @@ h3 {
   padding: 0.1px 0;
   border-top: solid 3px #364e96;
   border-bottom: solid 3px #364e96;
-  }
+}
 
 h4 {
+  border-radius: 20px;
   font-size: 16px;
   width: 256px;
   /* background-color: #fcc; */
   color: #333;
-  padding: 0px 5px;
+  padding: 0px 7px;
   margin-bottom: 0;
   border-left: solid 5px #f00;
 }
@@ -95,21 +96,21 @@ h4 {
 .a03-squash {
   height: 50px;
   width: 50px;
+  margin-bottom: 50px;
   background: #f00;
   animation:
-    squash-1 900ms infinite,
-    squash-2 900ms infinite;
+    "squash-1" 1s infinite alternate,
+    "squash-2" 900ms infinite;
 }
 @keyframes squash-1 {
-  0%,100% {transform: scale(0.8,1.2),
-    translateY(0);}
-  50% {transform: scale(1.1,0.9)
-    translateY(50px);}
+  0% {transform: scale(0.8,1.2);}
+  20%,80% {transform: scale(0,8,1.2);}
+  50% {transform: scale(1.2,0.8);}
 }
-/* @keyframes squash-2 {
+@keyframes squash-2 {
   0%,100% {transform: translateY(0);}
   50% {transform: translateY(50px);}
-} */
+}
 
 
 /* 2.色変化 */
