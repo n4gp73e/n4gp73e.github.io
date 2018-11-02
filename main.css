@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 body {
-  padding:1em;
   background-image: url("https://www.transparenttextures.com/patterns/cardboard-flat.png");
 }
 
@@ -14,29 +13,10 @@ footer{
 
 
 .title {
-  font-size: 24px;
-  text-align: center;
-  width: 250px;
-  padding: 0;
-  margin: 0;
+  background: #000;
   color: #fff;
-  background: #aaa;
-  position: relative;
-  padding: 0.25em 1em;
-  border-top: solid 2px black;
-  border-bottom: solid 2px black;
+  padding: 5px;
   }
-  .title:before, .title:after{
-  content: '';
-  position: absolute;
-  top: -7px;
-  width: 2px;
-    height: -webkit-calc(100% + 14px);
-  height: calc(100% + 14px);
-  background-color: black;
-  }
-  .title:before {left: 7px;}
-  .title:after {right: 7px;}
 
 
 
