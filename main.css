@@ -14,17 +14,24 @@ footer{
 
 
 .title {
-  width: 250px;
+  content: '';
+  display: block;
+  width: 180px;
   font-size: 18px;
-  background: #001;
-  opacity: 0.8;
-  /* position: absolute; */
+  background: rgba(0,0,0,0.8);
+  position: absolute;
+  top: 0;
+  left: -20px;
   color: #fff;
     /* 文字間隔 */
     /* letter-spacing: -0.2em; */
   padding: 5px;
-  transform: skewY(-2deg);
+  transform: skewx(-29deg);
   }
+.title-word {
+  position: inline-block;
+  left: 200px;
+}
 
 
 
@@ -64,12 +71,23 @@ h4 {
   margin-bottom: 0.5em;
 }
 
-
 /* 空白線 */
 .line {
   border-top: 5px double #8c8b8b;
   text-align: center;
   margin: 2em 0;
+}
+
+.head-anime {
+  top: -40px;
+  height: 20px;
+  width: 20px;
+  background: rgba(0,0,0,0.8);
+  animation: head-spin linear 3s infinite;
+}
+@keyframes head-spin {
+  0%   {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
 }
 
 
