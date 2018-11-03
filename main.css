@@ -31,13 +31,30 @@ footer{
   transform: skewx(-29deg);
   z-index: -1;
 }
-.title.title-word {
+.title::after {
+  content: '';
+  display: block;
   position: absolute;
-  top: 50%;
-  /* padding: 5px; */
+  width: 20px;
+  height: 42px;
+  background: rgba(0,0,0,0.8);
+  top: 0;
+  left: 195px;
+  /* 文字間隔 */
+  /* letter-spacing: -0.2em; */
+  transform: skewx(-29deg);
+  z-index: -2;
+}
+.title-word {
+  display: inline-block;
+  vertical-align: middle;
+  /* top: 50%; */
+  padding-left: 15px;
   font-size: 18px;
+  line-height: 42px;
   color: #fff;
   left: 200px;
+  font-weight: bold;
 }
 
 .main-contents {
