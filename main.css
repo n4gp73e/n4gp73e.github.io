@@ -71,25 +71,41 @@ h3 {
   border-bottom: solid 3px #364e96;
 }
 h3::before {
+  margin: 10px;
   content: "";
   /* top: -40px; */
   height: 15px;
   width: 15px;
   display: inline-block;
+  vertical-align: middle;
   background: rgba(0,0,0,0.8);
-  /* animation: head-spin linear 3s infinite; */
+  animation: head-spin linear 3s infinite;
 }
 
 
 h4 {
-  border-radius: 20px;
   font-size: 16px;
   width: 256px;
-  /* background-color: #fcc; */
+  height: 25px;
+  background-color: #fcc;
   color: #333;
   padding: 0px 7px;
   margin-bottom: 0;
-  border-left: solid 5px #f00;
+  position: relative;
+}
+h4::before{
+  content: '';
+  display: inline-block;
+  height: 18px;
+  width: 12px;
+  background: rgba(30,30,30,0.8);
+  /* border-left:  25px #f00; */
+  line-height: 25px;
+  margin-right: 10px;
+  transform: skewx(-29deg);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .supp {
