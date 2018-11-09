@@ -115,7 +115,44 @@ h4::before{
   color: #333;
 }
 
-
+.link-button {
+  float: left;
+  margin: 20px 0 20px 35px;
+  width: 64px;
+  height: 32px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.link-button::before{
+  content: "";
+  background: rgba(0, 0, 0, 0.8);
+  width: 64px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  transform: skewX(-29deg);
+  z-index: -1;
+}
+.link-button-now {
+  float: left;
+  margin: 20px 0 20px 35px;
+  width: 64px;
+  height: 32px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.link-button-now::before{
+  content: "";
+  background: rgba(120, 0, 0, 0.8);
+  width: 64px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  transform: skewX(-29deg);
+  z-index: -1;
+}
 /* 改行空白 */
 .bs {
   margin-bottom: 2em;
@@ -129,6 +166,7 @@ h4::before{
   border-top: 2px solid #eee;
   text-align: center;
   /* margin: 2em 0; */
+  clear: both;
 }
 @keyframes head-spin {
   0%   {transform: rotate(0);}
