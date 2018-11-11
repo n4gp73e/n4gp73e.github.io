@@ -139,7 +139,6 @@ h4::before{
   z-index: 1;
   transform: skewX(-29deg);
 }
-
 .link-button::before{
   content: "";
   background: rgba(0, 0, 0, 0.8);
