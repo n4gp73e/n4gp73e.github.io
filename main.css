@@ -109,6 +109,11 @@ h4::before{
 }
 
 
+
+
+
+/* <-------- .link-button -----------> */
+
 .link-button {
   float: left;
   margin: 20px 0 20px 35px;
@@ -119,27 +124,19 @@ h4::before{
   text-align: center;
   z-index: 1;
 }
-.link-button:hover {
-  color: #000;
-}
-.link-button:hover::after{
-  top: 0;
-  height: 100%;
-}
-.link-button:active{
-  top: 2px;
-}
 .link-button::before{
   content: "";
   background: rgba(0, 0, 0, 0.8);
   width: 64px;
   height: 32px;
+
   display: block;
   position: absolute;
   transform: skewX(-29deg);
   z-index: -1;
+  transition: all 0.3s ease;
 }
-.link-button::after{
+/* .link-button::after{
   content: "";
   background: #fff;
   width: 100%;
@@ -150,6 +147,17 @@ h4::before{
   position: absolute;
   transition: all 0.3s ease;
   z-index: -1;
+} */
+.link-button:hover {
+  color: #000;
+}
+.link-button:hover::before{
+  top: 0;
+  height: 64px;
+  width: 32px;
+  position: absolute;
+  display: block;
+
 }
 
 
