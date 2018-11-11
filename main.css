@@ -2,7 +2,11 @@
 
 body {
   margin: 0;
-  background-image: url("https://www.transparenttextures.com/patterns/cardboard-flat.png");
+  background: #f2f5f6;
+  background: -moz-linear-gradient(45deg, #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%);
+  background: -webkit-linear-gradient(45deg, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+  background: linear-gradient(45deg, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 );
 }
 
 footer{
@@ -13,7 +17,7 @@ footer{
 }
 
 
-.title: {
+.title {
   position: relative;
   overflow: hidden;
 }
@@ -129,35 +133,28 @@ h4::before{
   background: rgba(0, 0, 0, 0.8);
   width: 64px;
   height: 32px;
-
   display: block;
   position: absolute;
   transform: skewX(-29deg);
   z-index: -1;
-  transition: all 0.3s ease;
 }
-/* .link-button::after{
+.slide-anime::after{
+  position: absolute;
   content: "";
-  background: #fff;
   width: 100%;
   height: 0;
-  display: block;
   bottom: 0;
   left: 0;
-  position: absolute;
-  transition: all 0.3s ease;
+  background:#000;
   z-index: -1;
-} */
-.link-button:hover {
+  transition: all 0.3s ease;
+}
+.slide-anime:hover {
   color: #000;
 }
-.link-button:hover::before{
+.slide-anime:hover::after{
   top: 0;
-  height: 64px;
-  width: 32px;
-  position: absolute;
-  display: block;
-
+  height: 100%;
 }
 
 
@@ -199,6 +196,46 @@ h4::before{
   0%   {transform: rotate(0);}
   100% {transform: rotate(360deg);}
 }
+
+/**** BTN No. 12 ****/
+.custom-btn {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  /* outline: none !important; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  transform: skewX(-29deg);
+}
+.btn-12 {
+  border: 2px solid #000;
+  z-index: 1;
+}
+.btn-12:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #000;
+  transition: all 0.3s ease;
+}
+.btn-12:hover {
+  color: #fff;
+}
+.btn-12:hover:after {
+  top: 0;
+  height: 100%;
+}
+.btn-12:active {
+  top: 2px;
+}
+
 
 
 
