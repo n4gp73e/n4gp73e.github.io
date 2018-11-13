@@ -162,10 +162,7 @@ h4::before{
   transition: all 0.3s ease;
 }
 .link-word:hover {
-  width: 64px;
-  height: 32px;
   color: #000;
-  transition: all 0.3s ease;
 }
 .slide-anime:hover::after{
   top: 0;
