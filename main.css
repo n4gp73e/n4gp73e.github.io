@@ -74,17 +74,19 @@ h3 {
   border-top: solid 3px #364e96;
   border-bottom: solid 3px #364e96;
 }
-h3::before {
+/*　 回転するエフェクト　いらない
+h3::before {　
   margin: 10px;
   content: "";
   /* top: -40px; */
+/*
   height: 15px;
   width: 15px;
   display: inline-block;
   vertical-align: middle;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,255,0.8);
   animation: head-spin linear 3s infinite;
-}
+}  */
 
 
 h4 {
@@ -233,10 +235,27 @@ h4::before{
   top: 2px;
 }
 
+/* ----- game run ----- */
+.game-run {
+  width:100px;
+  height: 32px;
+  font: bold;
+  background: #f00;
+  text-align: center;
+
+}
 
 
+/* ------ kei3 window ------- */
+.calc-all {
+  margin: auto;
+  padding: 20px 40px;
+}
 
-
+.number {
+  margin: 30px;
+  width: 80px;
+}
 
 
 /* ------ css animations ------ */
