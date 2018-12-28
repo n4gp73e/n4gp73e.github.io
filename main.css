@@ -245,8 +245,25 @@ h4::before{
   text-align: center;
 }
 
+/* .cals-all h3 {
+  text-align: center;
+} */
+
+
 .number {
-  /* margin: 30px; */
+  /* margin: 30px; */1
+  font-weight: bold;
+  font-size: 32px;
+  color: #06f;
+  padding: 5px;
+  ma rgin: 5px;
+  border-radius: 5px;
+}
+
+.numberSymbol {
+  font-size: 32px;
+  font-weight: bolf;
+  color: #777;
 }
 
 .numberArea {
