@@ -251,12 +251,12 @@ h4::before{
 
 
 .number {
-  /* margin: 30px; */1
+  /* margin: 30px; */
   font-weight: bold;
   font-size: 32px;
   color: #06f;
   padding: 5px;
-  ma rgin: 5px;
+  margin: 5px;
   border-radius: 5px;
 }
 
