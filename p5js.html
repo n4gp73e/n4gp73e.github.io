@@ -1,33 +1,54 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>とりあえずRelease</title>
+    <script type="text/javascript">
+    function disp(url){
+      window.open(url, "window_name", "width=400,height=300,scrollbars=yes");
+    }
+  </script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="main.css">
-  <title>とりあえずRelease</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+
 </head>
 <body>
-  <div class="title">
-    <a href=index.html><span class="title-word"><tt>とりあえずＲｅｌｅａｓｅ</tt></span></a>
-  </div>
-  <a href="index.html">
-    <div class="link-button slide-anime">
-      <span class="link-word">TOP</span>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="./"><img src="nrbayowa.jpg" width="30" height="30" class="d-inline-block align-top mr-1">とりあえずＲｅｌｅａｓｅ</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="./">Top <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="p5js.html">p5.JS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">大気圧計測</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">nanka</a></li>
+        </ul>
+      </div>
     </div>
-  </a>
+  </nav>
 
-  <a href="p5js.html">
-    <div class="link-button slide-anime">
-      <span class="link-word">p5.js</span>
-      <div class="link-now"></div>
+
+  <div class="col-lg-12">
+
+    <div class="bs-component kukan-bottom">
+      <a href="index.html"><button type="button" class="btn btn-primary btn-lg">T O P</button></a>
+      <a href="p5js.html"><button type="button" class="btn btn-primary btn-lg">  p5.js  </button></a>
     </div>
-  </a>
 
-                                  <div class="main-contents">
-  <div class="line"></div>
-  <div class="bs"></div>
 
-  <footer>
-      <div>Ⓒ n4gp73e</div>
-  </footer>
+  </div><!-- main-contents -->
+
+
+    <footer class="bg-info" >Ⓒ n4gp73e</footer>
+
 </body>
 </html>
