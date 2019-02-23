@@ -11,24 +11,24 @@ function csv2Array(str) {
 
 function drawBarChart(data) {
   // 3)chart.jsのdataset用の配列を用意
-  var tmpLabels = [], tmpData1 = [], tmpData2 = [];
+  var tmpLabels = [], tmpData1 = [], tmpData2 = [], tmpData3 = [];
   for (var row in data) {
     tmpLabels.push(data[row][0])
     tmpData1.push(data[row][1])
     tmpData2.push(data[row][2])
-    // tmpData3.push(data[row][3])
+    tmpData3.push(data[row][3])
   };
 
   // 4)chart.jsで描画
   var ctx = document.getElementById("myChart").getContext("2d");
   var myChart = new Chart(ctx, {
-    type: 'line',
+    type: 'bar',
     data: {
       labels: tmpLabels,
       datasets: [
-        { label: "気温", data: tmpData1, backgroundColor: "red" },
-        { label: "湿度", data: tmpData2, backgroundColor: "blue" }
-        // { label: "大気圧", data: tmpData3, backgroundColor: "#fff" }
+        { label: "気温", data: tmpData1, backgroundColor: "red", autoSkip:true, maxTicksLimit: 10 },
+        { label: "湿度", data: tmpData2, backgroundColor: "blue", autoSkip:true, maxTicksLimit: 10 },
+        { label: "大気圧", data: tmpData3, backgroundColor: "yellow", autoSkip:true, maxTicksLimit: 10}
       ]
     }
   });
