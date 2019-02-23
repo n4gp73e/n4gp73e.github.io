@@ -1,14 +1,5 @@
 @charset "utf-8";
 
-body {
-  margin: 0;
-  background: #f2f5f6;
-  background: -moz-linear-gradient(45deg, #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%);
-  background: -webkit-linear-gradient(45deg, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
-  background: linear-gradient(45deg, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 );
-}
-
 footer{
   margin-top: 30px;
   font-size: 12px;
@@ -20,9 +11,6 @@ footer{
 
 .kukan-bottom {
   margin-bottom: 15px;
-}
-.kukan-top {
-  margin-top: 15px;
 }
 
 
@@ -66,8 +54,7 @@ footer{
   font-size:24px;
 }
 /* ボタン関連 */
-.buttonOption {
-}
+
 .numberButton {/*計算問題 出題ボタン*/
   font-size: 24px;
   font-weight: bold;
