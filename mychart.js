@@ -26,10 +26,28 @@ function drawBarChart(data) {
     data: {
       labels: tmpLabels,
       datasets: [
-        { label: "気温", data: tmpData1, backgroundColor: "red", autoSkip:true, maxTicksLimit: 10 },
-        { label: "湿度", data: tmpData2, backgroundColor: "blue", autoSkip:true, maxTicksLimit: 10 },
-        { label: "大気圧", data: tmpData3, backgroundColor: "yellow", autoSkip:true, maxTicksLimit: 10}
+        { label: "気温", data: tmpData1, backgroundColor: "red"},
+        { label: "湿度", data: tmpData2, backgroundColor: "blue"},
+        { label: "大気圧", data: tmpData3, backgroundColor: "yellow"}
       ]
+    },
+    options: {
+      scales: {
+        xAxes: [{
+        ticks: {
+            beginAtZero: true,
+            suggestedMin: 0.0,
+            suggestedMax: 1.0,
+            stepSize: 0.1,
+            callback: function(value, index, values) {
+                if (index %2 ===1 ) {
+                    return "";
+                }
+                return value;
+            }
+        }
+    }]
+      }
     }
   });
 }
