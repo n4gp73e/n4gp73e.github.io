@@ -31,23 +31,16 @@ function drawBarChart(data) {
         { label: "大気圧", data: tmpData3, backgroundColor: "yellow"}
       ]
     },
-    options: {
-      scales: {
-        xAxes: [{
-        ticks: {
-            beginAtZero: true,
-            suggestedMin: 0.0,
-            suggestedMax: 1.0,
-            stepSize: 0.1,
-            callback: function(value, index, values) {
-                if (index %2 ===1 ) {
-                    return "";
-                }
-                return value;
-            }
-        }
-    }]
+    scales:{
+      yAxes: [{ticks:{min:0,max:100,stepSize:5,
+      // 小数点非表示
+        beginAtZero: true,userCallback: function(label,index,labels){
+          if (Math.floor(label) === label) {
+            return label;
+          }}
       }
+    }]
+
     }
   });
 }
