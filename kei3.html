@@ -2,42 +2,34 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>test work</title>
-  <script type="text/javascript" src="kei3.js"></script>
+  <title>計算問題</title>
+  <script type="text/javascript" src="js/kei3.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
 
 <div class="calc-all"><!-- 問題全体に対しての設定 -->
-    <h3>xxxxx</h3>
+    <h3 style="padding:5px; border-radius: 5px; color:#fff; font-weight:normal" class=" bg-info">計算問題出題</h3>
+    <a href="#" onclick="window.close()"><span style="float: right" class="badge badge-pill badge-danger">[Ｘ]とじる</span></a>
+      <p style="clear:both; padding:10px" class="text-muted"><small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">出題された数値の合計を解くやつです。<br>ぶっ壊れてます。</font></font></small></p>
   <div class="ss"></div>
     <div class="buttonOption"><!-- ボタンに対しての位置調整 等 -->
-      <form><input type="button" class="numberButton" value=" To make a test" onclick="numStart()"></form><!-- 出題ボタン -->
-    </div>
-    <div class="numberArea">
-      <span id="num1" class="number">？？</span><!-- 問題表示 左 -->
-      <span class="numberSymbol">＋</span><!-- 四則演算 記号 -->
-      <span id="num2" class="number">？？</span><!-- 問題表示 右 -->
-      <span class="numberSymbol">=</span><!-- 問題表示 = -->
-      <span id="answer">test</span><!-- 答え -->
-    </div>
-      <form><input type="button" value="Total Answer" class="answerButton" onclick="namAnswer()"></form><!-- 解答ボタン -->
-    <!-- <div>[spaceキー]で開始終了するよ</div>問題表示 右 -->
-  <!-- v0.8 -->
-
-  <header style="background-color:gray">Header</header>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-2" style="background-color:red;">Red</div>
-    <div class="col-sm-8" style="background-color:blue;">Blue</div>
-    <div class="col-sm-2" style="background-color:yellow;">Yellow</div>
+    <button type="button" class="btn btn-success btn-lg" onclick="numStart()">出 題 ！</button>
+    <!-- 出題ボタン -->
   </div>
+  <div class="numberArea">
+    <span id="num1" class="number">？？</span><!-- 問題表示 左 -->
+    <span class="numberSymbol">＋</span><!-- 四則演算 記号 -->
+    <span id="num2" class="number">？？</span><!-- 問題表示 右 -->
+    <span class="numberSymbol">=</span><!-- 問題表示 = -->
+    <span id="answer">test</span><!-- 答え -->
+  </div>
+  <button type="button" class="btn btn-danger btn-lg" onclick="namAnswer()">回 答 ！</button><!-- 解答ボタン -->
+    <!-- <div>[spaceキー]で開始終了するよ</div>問題表示 右 -->
 
-
-</div>
-<footer class="mt-20" style="background-color:gray">Footer</footer>
+    <footer class="bg-info" >Ⓒ n4gp73e</footer>
 </div>
 
 </body>

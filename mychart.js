@@ -26,22 +26,23 @@ function drawBarChart(data) {
     data: {
       labels: tmpLabels,
       datasets: [
-        { label: "気温", data: tmpData1, backgroundColor: "red"},
-        { label: "湿度", data: tmpData2, backgroundColor: "blue"},
-        { label: "大気圧", data: tmpData3, backgroundColor: "yellow"}
+        { label: "気温", data: tmpData1,type:'line',fill: false, backgroundColor: "red",
+      pointRadius: 5,pointHoverRadius:8},
+        { label: "湿度", data: tmpData2,type:'line',fill: false, backgroundColor: "blue",
+        pointRadius: 5,pointHoverRadius:8},
+        { label: "大気圧", data: tmpData3,border:"#000", backgroundColor: "#ff9"}
       ]
     },
-    scales:{
-      yAxes: [{ticks:{min:0,max:100,stepSize:5,
-      // 小数点非表示
-        beginAtZero: true,userCallback: function(label,index,labels){
-          if (Math.floor(label) === label) {
-            return label;
-          }}
-      }
-    }]
-
-    }
+        options: {
+          scales: {
+            yAxes: [
+              {ticks:{beginAtZero: true, min:995,max:1020}}
+            ]
+          },
+          title: {
+            display:true, fontSize:18, text:'屋内：2018.12.26〜2019.2.23'
+          }
+        }
   });
 }
 
