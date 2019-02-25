@@ -30,24 +30,21 @@ function drawBarChart(data) {
         data: tmpData1,
         type:'line',
         fill: false,
+        pointRadius:0,
         borderColor: "red",
-        backgroundColor: "red",
-        pointRadius: 5,
-        pointHoverRadius:8,
         yAxisID: "y-left",
       }, {
         label: "湿度",
         data: tmpData2,
         type:'line',
         fill: false,
+        pointRadius:0,
         borderColor: "blue",
-        backgroundColor: "blue",
-        pointRadius: 5,
-        pointHoverRadius:8,
         yAxisID: "y-left",
       }, {
         label: "大気圧",
         data: tmpData3,
+        barPercetage: 0.1,
         backgroundColor: "#ff9",
         yAxisID: "y-right",
       },],
@@ -60,14 +57,14 @@ function drawBarChart(data) {
           position: "left",
           ticks:{
             min:10,
-            max:59,
+            max:72,
           }},{
           id: "y-right",
           type: "linear",
           position:"right",
           ticks:{
-            min:998,
-            max:1020,
+            min:995,
+            max:1025,
           },
           gridLines: {
             drawOnChartArea: false,
@@ -86,7 +83,7 @@ function drawBarChart(data) {
 function main() {
   // 1) ajaxでCSVファイルをロード
   var req = new XMLHttpRequest();
-  var filePath = 'get_sensor_data.csv';
+  var filePath = 'get_sensor_dataB.csv';
   req.open("GET", filePath, true);
   req.onload = function() {
     // 2) CSVデータ変換の呼び出し
