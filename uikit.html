@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+  <html lang="ja">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>test titlet</title>
+  <style>
+.midasi{
+  width: 80%;
+  color: #33f;
+  font-size: 36px;
+  font-weight: bold;
+  padding-left: 80px;
+  margin: 50px 0 5px 50px;
+  box-sizing: border-box;
+  border-bottom: #33f solid 4px;
+  position: relative;
+}
+.midasi::before{
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 50px;
+  margin-left: 15px;
+  content: "\f0e0";
+}
+.midasi::after{
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 60px;
+  background: #33f;
+  bottom: -4px;
+  right: 0%;
+  transform: skew(25deg);
+}
+.btn {
+  color: #FFF;
+  font-size: 36px;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  height:80px;
+  line-height: 84px;
+  margin: 25px auto;
+  padding: 15px;
+  background-color: #55f;
+  border: 2px solid #33f;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn:after{
+  width: 100%;
+  height: 0;
+  content:"";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #FfffFF;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transition: .2s;
+  z-index: -1;
+}
+.btn:hover{
+  color: #00f;
+}
+.btn:hover:after{
+  height: 200%;
+  opacity: 1;
+}
+.btn:active:after{
+  height: 320%;
+  opacity: 1;
+}
+.fa-envelope{
+  color: #33f;
+}
+  </style>
+</head>
+<body>
+  <div class="midasi">テスト見出し</div>
+  <a class="btn" href="#">ボタン</a>
+  <a class="btn" href="#">ボタン</a>
+  <a class="btn" href="#">ボタン</a>
+  <a class="btn" href="#">ボタン</a>
+  <a class="btn" href="#">ボタン</a>
+</body>
+</html>
