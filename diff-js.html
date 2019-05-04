@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>複数比較検出</title>
+  <style>
+    .all_wrapper{
+      margin: 50px;
+    }
+    .page_header{
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 2px solid #007AB7;
+      border-top: 2px solid #007ab7;
+      color: #007AB7;
+      margin: 25px auto;
+      width: 280px;
+      height: 38px;
+      position: relative;
+    }
+    .page_header::after{
+      content: "";
+      background: #007AB7;
+      width: 25px;
+      height: 42px;
+      position: absolute;
+      left: 3%;
+      bottom: -2px;
+      transform: skew(-25deg);
+    }
+    .page_header::before{
+      content: "";
+      background: #007AB7;
+      width: 25px;
+      height: 42px;
+      position: absolute;
+      right: -3%;
+      bottom: -2px;
+      transform: skew(-25deg);
+    }
+    .input_column{
+      width: 200px;
+      height: 200px;
+      font-size: 16px;
+
+    }
+    .checkBtn{
+      text-align: center;
+      width: 120px;
+      height: 48px;
+      line-height: 48px;
+      font-size: 18px;
+      display: inline-block;
+      color: #fff;
+      background: #45A1CF;
+      border-radius: 10px;
+    }
+    .checkBtn:hover{
+      background: #9ACDE7;
+
+    }
+    .msgBox{
+      margin: 25px auto;
+    }
+    .outBtn{
+      width: 100px;
+      height: 50px;
+      margin-right: 25px;
+      margin-bottom: 25px;
+    }
+    #outbox{
+      width: 200px;
+      height: 42px;
+      margin-bottom: 25px;
+
+    }
+
+
+    fieldset {/* ラジオの項目 */
+      width: 380px;
+      margin: 5px 0;
+      padding: 2px 10px 10px 10px;
+      border: 1px dashed #777;
+    }
+  </style>
+  <script text="text/javascript">
+    // form要素を取得
+    function outBtn(){
+    var element = document.getElementById( "title1" ) ;
+    // form要素内のラジオボタングループ(name="xxxx")を取得
+    var radioNodeList = element.site ;
+    // 選択状態の値(value)を取得 (Bが選択状態なら"b"が返る)
+    var a = radioNodeList.value ;
+    if ( a === "" ) {
+      // 未選択状態
+    } else {
+      // aには選択状態の値が代入されている
+    console.log = "a";
+    // documet.getElementById("hyouji").innerHTML = "a";
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="all_wrapper">
+    <div class="page_header">検出比較</div>
+    <div class="checkBtn" onclick="getvalue();">比較する</div>
+
+    <div class="msgBox">
+      <textarea id="tet1" class="input_column" value="hoge"></textarea>
+      <textarea id="tet2" class="input_column" value="hoge"></textarea>
+    </div>
+
+    <div class="page_header">タイトル変更</div>
+    <div id="hyouji">aiueo</div>
+    <button class="outBtn" type="button" onclick="outBtn()">テストボタン</button>
+    <input id="outbox" type="text" value="出力結果">
+
+
+    <form id="title1">
+      <fieldset>
+        <legend>サイト</legend>
+        <label><input type="radio" name="site" value="6">六本木</label>
+        <label><input type="radio" name="site" value="ebisu">恵比寿</label>
+      </fieldset>
+    </form>
+
+
+  <fieldset>
+    <legend>ジャンル</legend>
+    <label><input type="radio" name="category">お知らせ</label>
+    <label><input type="radio" name="category">同報</label>
+    <label><input type="radio" name="category">鑑定</label>
+    <label><input type="radio" name="category">鑑定・既読</label>
+  </fieldset>
+
+
+  <fieldset>
+    <legend>固定・ログ</legend>
+    <label><input type="radio" name="type">固定</label>
+    <label><input type="radio" name="type">基本</label>
+    <label><input type="radio" name="type">ログ</label>
+  </fieldset>
+
+  </div>
+</body>
+</html>
