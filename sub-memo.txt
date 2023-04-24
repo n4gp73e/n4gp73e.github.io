@@ -6,3 +6,4 @@ systemd (232-25+deb9u8) のトリガを処理しています ...
  emacs25
 E: Sub-process /usr/bin/dpkg returned an error code (1)
 [ras]10:44:47 ~ #
+d
